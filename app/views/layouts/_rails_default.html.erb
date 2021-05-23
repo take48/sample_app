@@ -1,0 +1,8 @@
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+ <!- 最初のapplicationの引数はスタイルシートへのパス、次のハッシュはメディアタイプを示し、
+  次の要素はRailsで追加されたturbolinksという機能をオンにしている。 ->
+  
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
